@@ -7,27 +7,13 @@ import Header from "./components/header/index.jsx";
 import ForgotPassword from "./components/forgotPassword/index.jsx";
 import ResetPassword from "./components/forgotPassword/resetPassword/index.jsx";
 import AccountSetup from "./components/profiles/AccountSetup.jsx";
-import { ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
 import VerifyEmail from "./components/verifyEmail/index.jsx";
 import SignUp from "./components/forms/signUp/index.jsx";
 import SignIn from "./components/forms/signIn/index.jsx";
 function App() {
   const location = useLocation();
   return (
-    <>
-      <ToastContainer
-        position="top-center"
-        autoClose={5000}
-        hideProgressBar={false}
-        newestOnTop={false}
-        closeOnClick
-        rtl={false}
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover
-        theme="light"
-      />
+    <>      
       {(location.pathname === "/forgot-password" ||
         location.pathname === "/reset-password" ||
         location.pathname === "/account-setup") && (

@@ -1,5 +1,3 @@
-import { toast } from "react-toastify";
-
 export const emailPattern = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
 export const encryptData = (name, data, expriyTime) => {
   const encrypted = CryptoJS.AES.encrypt(
@@ -65,39 +63,9 @@ export const capitalizeFirstLetter = (str) => {
   return str.charAt(0).toUpperCase() + str.slice(1);
 };
 
-export const successMsg = (message) => {
-  toast.success(message, {
-    position: "top-center",
-    autoClose: 5000,
-    hideProgressBar: false,
-    closeOnClick: true,
-    pauseOnHover: true,
-    draggable: true,
-    progress: undefined,
-    theme: "light",
-  });
+export const successMsg = (message) => {  
 };
-export const errorMsg = (message, isAccessMessage) => {
-  toast.error(isAccessMessage ? `You have no access to ${message}` : message, {
-    position: "top-center",
-    autoClose: 5000,
-    hideProgressBar: false,
-    closeOnClick: true,
-    pauseOnHover: true,
-    draggable: true,
-    progress: undefined,
-    theme: "light",
-  });
+export const errorMsg = (message, isAccessMessage) => {  
 };
-export const logoutSuccessMsg = (message) => {
-  toast.success(message, {
-    position: "top-center",
-    autoClose: 1000,
-    hideProgressBar: false,
-    closeOnClick: true,
-    pauseOnHover: true,
-    draggable: true,
-    progress: undefined,
-    theme: "light",
-  });
+export const logoutSuccessMsg = (message) => { 
 };
