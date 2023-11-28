@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
-import Input from "../forms/common/input-field";
+import Input from "../../forms/common/input-field";
 
 const AccountSetup = () => {
   const {
