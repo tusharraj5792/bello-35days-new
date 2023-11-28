@@ -9,14 +9,11 @@ export const Slide2 = () => {
         </h2>
         <div className="top-line my-3 mx-4"></div>
 
-        <div className="d-flex px-4 justify-content-between align-items-center py-4">
-          <div>
-            <img src="../static/img/arrow-turn.png" className="" alt="" />
-          </div>
+        <div className="d-flex px-4 justify-content-between py-4">
           <div className="1 w-25 ">
             <div className="">
               <div className="m-5">
-                <div className="d-flex align-items-center justify-content-end">
+                <div className="d-flex align-items-center">
                   <h2 className="fw-bold fs-5">Specific Product</h2>
                 </div>
                 <p className="">
@@ -28,16 +25,12 @@ export const Slide2 = () => {
                   Use the Value Stick to determine your pricing strategy based
                   on specific value drivers that increase WTP.
                 </p>
-                <div className="text-center">
-                  <img src="../static/img/arrow.png" alt="" />
-                </div>
               </div>
               <div className="m-5">
                 <div>
-                  <div className="d-flex align-items-center justify-content-end">
-                    <h2 className="fw-bold fs-5 text-end ">Specific Price</h2>
+                  <div className="d-flex align-items-center">
+                    <h2 className="fw-bold fs-5">Specific Price</h2>
                   </div>
-
                   <p className="">
                     Describe price strategy comparing WTP against your price and
                     the resulting customer delight.
@@ -60,11 +53,7 @@ export const Slide2 = () => {
                 <div className="d-flex align-items-center">
                   <h2 className="fw-bolder fs-5">Specific Capabilities</h2>
                 </div>
-
                 <p className="">Product specs & features.</p>
-                <div className="text-center">
-                  <img src="../static/img/arrow1.png" alt="" />
-                </div>
                 <p className="p-3 rounded-3 border border-dark border-2 fw-bold">
                   Use WTP elements as value drivers to draw your product Value
                   Map to help prioritize your efforts and optimize your resource
@@ -72,9 +61,6 @@ export const Slide2 = () => {
                 </p>
               </div>
               <div className="m-5">
-                <div className="text-center">
-                  <img src="../static/img/arrow.png" alt="" />
-                </div>
                 <div>
                   <div className="d-flex align-items-center">
                     <h2 className="fs-5 fw-bold">Specific Customer</h2>
@@ -82,9 +68,6 @@ export const Slide2 = () => {
                   <p className="">
                     Details about customer segment, persona, avatar.
                   </p>
-                  <div className="text-center">
-                    <img src="../static/img/arrow.png" alt="" />
-                  </div>
                   <p className="p-3 rounded-3 border border-dark border-2 fw-bold">
                     Use WTP elements as value drivers to draw your product Value
                     Map to help prioritize your efforts and optimize your

@@ -9,8 +9,8 @@ import {
   selectForgetPasswordLoding,
   selectLinkSent,
 } from "../../store/reducers/forgetPasswordSlice";
-import CheckInBox from "../checkInBox/index";
-import Loader from "../loaders/index";
+import CheckInBox from "../checkInBox/CheckInBox";
+import Loader from "../loaders/loader";
 
 function ForgotPassword() {
   const dispatch = useAppDispatch();

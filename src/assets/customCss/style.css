@@ -33,7 +33,7 @@
   font-size: 32px;
   font-weight: 600;
   text-align: end;
-  /* color: var(--primary-color); */
+  color: var(--primary-color);
 }
 .box2 .box2-subtitle {
   font-size: 20px;
@@ -509,11 +509,6 @@
 
 .-tranlate-20 {
   transform: translateX(-20px) translateY(4px);
-}
-
-.lightgreen-answer {
-  background-color: #62bf79;
-  border: 2px solid #62bf79 !important;
 }
 
 @media only screen and (max-width: 1300px) {

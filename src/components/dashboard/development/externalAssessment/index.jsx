@@ -24,7 +24,7 @@ export const ExternalAssessment = () => {
   return (
     <>
       <nav aria-label="breadcrumb">
-        <ol className="breadcrumb ">
+        <ol className="breadcrumb">
           <li className="breadcrumb-item ">
             <Link
               className="fw-medium fs-18 text-black text-decoration-none"

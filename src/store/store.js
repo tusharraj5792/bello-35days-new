@@ -5,14 +5,12 @@ import signInReducer from "./reducers/signInSlice";
 import signUpReducer from "./reducers/signUpSlice";
 import forgetPasswordReducer from "./reducers/forgetPasswordSlice";
 import verifyEmailReducer from "./reducers/verifyEmailSlice";
-import comfirmMissionSlidesReducer from "./reducers/comfirmMissionSlidesSlice";
 
 export const rootReducer = combineReducers({
   signIn: signInReducer,
   signUp: signUpReducer,
   forgetPassword: forgetPasswordReducer,
   verfiyEmail: verifyEmailReducer,
-  confirmMissionSlides: comfirmMissionSlidesReducer,
 });
 
 const sagaMiddleware = createSagaMiddleware();

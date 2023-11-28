@@ -18,7 +18,7 @@ const Sidebar = () => {
         >
           {Data &&
             Data.map((menus) => (
-              <div className="w-100" key={menus.id}>
+              <div key={menus.id}>
                 {menus.main && (
                   <p className="mb-1 d-none d-sm-inline" key={menus.id}>
                     <span className="menu-title text-dark font-14">

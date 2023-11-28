@@ -128,7 +128,7 @@ const Slide5 = () => {
                     <p className="primary-bg text-white py-2 px-3 m-3 fw-medium">
                         Instructions: Fill out the table by listing identified products, value drivers and how they increase WTP.{" "}
                     </p>
-                    <table className='mx-auto my-4 border border-2 slide22-table' width={"92%"}>
+                    <table className='mx-auto -mt-5 border border-2 slide22-table' width={"92%"}>
                         <thead>
                             <tr>
                                 <th className='ps-4  '>Identified Product

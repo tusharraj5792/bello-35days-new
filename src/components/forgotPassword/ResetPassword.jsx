@@ -1,14 +1,14 @@
 import React, { useEffect } from "react";
 import { useForm } from "react-hook-form";
-import Input from "../../forms/common/input-field";
-import { emailPattern } from "../../../utilities/utils";
-import PasswordComplexity from "../../verifyEmail/passwordComplexity/index";
-import { useAppDispatch, useAppSelector } from "../../../store/hooks";
+import Input from "../forms/common/input-field";
+import { emailPattern } from "../../utilities/utils";
+import PasswordComplexity from "../passwordComplexity";
+import { useAppDispatch, useAppSelector } from "../../store/hooks";
 import {
   forgetPasswordActions,
   // selectForgotPasswordToken,
   selectResetPasswordSuccess,
-} from "../../../store/reducers/forgetPasswordSlice";
+} from "../../store/reducers/forgetPasswordSlice";
 import { useNavigate, useParams } from "react-router-dom";
 
 const ResetPassword = () => {

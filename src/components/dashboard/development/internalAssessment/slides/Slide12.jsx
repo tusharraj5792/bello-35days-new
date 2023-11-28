@@ -79,7 +79,7 @@ const Slide12 = () => {
                 </table>
                 <div className='d-flex justify-content-between mx-auto align-items-center mb-5' style={{ width: "90%" }}>
                     <p className='fst-italic fs-12 fw-medium'>Note: a score of less than 2 indicates an need to focus on building or enhancing organizational change capacity.</p>
-                    <p className='fw-medium highlighted-answer text-center bg-white'>Not Ready</p>
+                    <p className='fw-medium pe-4'>Not Ready</p>
                 </div>
                 <div className='bottom-line mt-3'></div>
             </section>

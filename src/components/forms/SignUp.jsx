@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import Input from "../common/input-field";
+import Input from "./common/input-field";
 import { useForm } from "react-hook-form";
-import { emailPattern } from "../../../utilities/utils";
-import PasswordComplexity from "../../verifyEmail/passwordComplexity/index";
+import { emailPattern, successMsg } from "../../utilities/utils";
+import PasswordComplexity from "../passwordComplexity";
 import { useDispatch } from "react-redux";
-import { useAppSelector } from "../../../store/hooks";
+import { useAppSelector } from "../../store/hooks";
 import ReactMarkdown from "react-markdown";
 
 import {
@@ -13,8 +13,9 @@ import {
   selectIsRegistering,
   selectSignUpErrorsMsg,
   signupActions,
-} from "../../../store/reducers/signUpSlice";
-import Loader from "../../loaders";
+} from "../../store/reducers/signUpSlice";
+import Loader from "../loaders/loader";
+// import { toast } from "react-toastify";
 
 const SignUp = () => {
   const dispatch = useDispatch();

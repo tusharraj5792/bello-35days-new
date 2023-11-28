@@ -7,19 +7,15 @@ function VerifyEmail() {
   const dispatch = useAppDispatch();
   const id = useParams();
   const verifyEmailToken = localStorage.getItem("verifyEmailToken");
-  useEffect(() => {
+  //   useEffect(() => {
+
+  //   }, []);
+  const HandleVerifyEmail = () => {
     const payload = {
       id: id.id,
       token: verifyEmailToken,
     };
     dispatch(verifyEmailActions.verifyEmail(payload));
-  }, []);
-  const HandleVerifyEmail = () => {
-    // const payload = {
-    //   id: id.id,
-    //   token: verifyEmailToken,
-    // };
-    // dispatch(verifyEmailActions.verifyEmail(payload));
   };
   return (
     <div>

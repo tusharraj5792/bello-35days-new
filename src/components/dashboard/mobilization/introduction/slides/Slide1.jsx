@@ -1,15 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 
 const Slide1 = () => {
-  const [title, setTitle] = useState("Value-baesd Stratergy");
-  const [startYear, setStartYear] = useState("202x");
-  const [endYear, setEndYear] = useState("202x");
-  const [textColor, setTextColor] = useState("#005dff");
-  const [logoImage, setLogoImage] = useState("../static/img/logo.svg");
-  const handleFile = (e) => {
-    setLogoImage(URL.createObjectURL(e.target.files[0]));
-  };
-
   return (
     <>
       <div className=" ">
@@ -18,18 +9,15 @@ const Slide1 = () => {
             <div className="box-img position-absolute"></div>
             <div className="position-absolute color-class">
               <div className="color-black"></div>
-              <div
-                className="color-blue"
-                // style={{ backgroundColor: textColor }}
-              ></div>
+              <div className="color-blue"></div>
             </div>
             <div className="box-text position-absolute">
               <p className="text-center">
-                <img src={logoImage} alt="" />
+                <img src="../static/img/logo.svg" alt="" />
               </p>
-              <h2 style={{ color: textColor }}>
-                {title} <br />
-                {startYear}-{endYear}
+              <h2>
+                Value-baesd Stratergy <br/>
+                202x-202x
               </h2>
             </div>
           </div>
@@ -48,11 +36,7 @@ const Slide1 = () => {
                   <label htmlFor="formFile" className="form-label">
                     Logo
                   </label>
-                  <input
-                    className="form-control"
-                    type="file"
-                    onChange={handleFile}
-                  />
+                  <input className="form-control" type="file" id="formFile" />
                 </div>
               </div>
               <div className="col-3">
@@ -64,8 +48,7 @@ const Slide1 = () => {
                     type="color"
                     className="form-control form-control-color"
                     id="exampleColorInput"
-                    value={textColor}
-                    onChange={(e) => setTextColor(e.target.value)}
+                    // value="#005dff"
                     title="Choose your color"
                   />
                   <div className="mx-2">or</div>
@@ -75,8 +58,6 @@ const Slide1 = () => {
                     id="exampleColorInput"
                     placeholder="Enter Color Code"
                     title="Choose your color"
-                    value={textColor}
-                    onChange={(e) => setTextColor(e.target.value)}
                   />
                 </div>
               </div>
@@ -94,8 +75,6 @@ const Slide1 = () => {
                     type="text"
                     className="form-control"
                     placeholder="Write here the title of the presentation"
-                    value={title}
-                    onChange={(e) => setTitle(e.target.value)}
                   />
                 </div>
               </div>
@@ -112,14 +91,12 @@ const Slide1 = () => {
                   <input
                     type="date"
                     className="form-control me-2"
-                    value={startYear}
-                    onChange={(e) => setStartYear(e.target.value.split("-")[0])}
+                    placeholder="Write here the title of the presentation"
                   />
                   <input
                     type="date"
                     className="form-control ms-2"
-                    value={endYear}
-                    onChange={(e) => setEndYear(e.target.value.split("-")[0])}
+                    placeholder="Write here the title of the presentation"
                   />
                 </div>
               </div>

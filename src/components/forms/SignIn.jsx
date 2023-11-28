@@ -6,13 +6,13 @@ import {
   selectIsLoginLoading,
   selectSignInErrorsMsg,
   signInActions,
-} from "../../../store/reducers/signInSlice";
-import Input from "../common/input-field";
-import { emailPattern, successMsg } from "../../../utilities/utils";
-import { useAppSelector } from "../../../store/hooks";
+} from "../../store/reducers/signInSlice";
+import Input from "./common/input-field";
+import { emailPattern, successMsg } from "../../utilities/utils";
+import { useAppSelector } from "../../store/hooks";
 import ReactMarkdown from "react-markdown";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import Loader from "../../loaders";
+import Loader from "../loaders/loader";
 
 const SignIn = () => {
   const dispatch = useDispatch();

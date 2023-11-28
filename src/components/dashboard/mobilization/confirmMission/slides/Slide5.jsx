@@ -1,17 +1,11 @@
 import React, { useState } from "react";
-import SlidesButtons from "../../../../slidesButtons";
+import SlidesButtons from "../../../../slidesButtons/slidesButtons";
 
-const Slide5 = ({
-  onChange,
-  currentSlide,
-  totalSlides,
-  question1,
-  question2,
-  question3,
-  setquestion1,
-  setquestion2,
-  setquestion3,
-}) => {
+const Slide5 = ({ onChange, currentSlide, totalSlides }) => {
+  const [question1, setquestion1] = useState("");
+  const [question2, setquestion2] = useState("");
+  const [question3, setquestion3] = useState("");
+
   return (
     <>
       {/* Slide 16 Starts */}
@@ -32,9 +26,8 @@ const Slide5 = ({
               </h5>
               <div className="w-83 mx-auto">
                 <p className="fs-18">
-                  {question1
-                    ? question1
-                    : " Mention your core values and prioritize them based on importance to stakeholders."}
+                  Mention your core values and prioritize them based on
+                  importance to stakeholders.
                 </p>
               </div>
             </div>
@@ -52,24 +45,16 @@ const Slide5 = ({
                   Vision Statement
                 </h6>
                 <p className="fs-18">
-                  {question2 ? (
-                    question2
-                  ) : (
-                    <>
-                      <p className="fs-18">
-                        State your company vision. The fundamental reason for
-                        the organization's existence.
-                      </p>
-                      <p className="fs-18">Grow out of core values.</p>
-                      <p className="fs-18">
-                        Like a guiding star always worked towards, but never
-                        fully attained.
-                      </p>
-                      <p className="fs-18">
-                        Should serve to guide the company for 100 years.
-                      </p>
-                    </>
-                  )}
+                  State your company vision. The fundamental reason for the
+                  organization's existence.
+                </p>
+                <p className="fs-18">Grow out of core values.</p>
+                <p className="fs-18">
+                  Like a guiding star always worked towards, but never fully
+                  attained.
+                </p>
+                <p className="fs-18">
+                  Should serve to guide the company for 100 years.
                 </p>
               </div>
             </div>
@@ -84,29 +69,19 @@ const Slide5 = ({
               </h5>
               <div className="w-83 mx-auto">
                 <p className="fs-18">
-                  {question3 ? (
-                    question3
-                  ) : (
-                    <>
-                      <p className="fs-18">
-                        State your company mission. A bold, compelling,
-                        audacious goal.
-                      </p>
-                      <p className="fs-18">
-                        Set your finish line and time frame.
-                      </p>
-                      <h6 className="fs-18 fw-semibold mt-4">
-                        What type of a mission?
-                      </h6>
-                      <ol className="mb-4 ps-3">
-                        <li className="ps-3">Targeting</li>
-                        <li className="my-2 ps-3">Common Enemy</li>
-                        <li className="my-2 ps-3">Role Model</li>
-                        <li className="ps-3">Internal Transformation</li>
-                      </ol>
-                    </>
-                  )}
+                  State your company mission. A bold, compelling, audacious
+                  goal.
                 </p>
+                <p className="fs-18">Set your finish line and time frame.</p>
+                <h6 className="fs-18 fw-semibold mt-4">
+                  What type of a mission?
+                </h6>
+                <ol className="mb-4 ps-3">
+                  <li className="ps-3">Targeting</li>
+                  <li className="my-2 ps-3">Common Enemy</li>
+                  <li className="my-2 ps-3">Role Model</li>
+                  <li className="ps-3">Internal Transformation</li>
+                </ol>
               </div>
             </div>
           </div>

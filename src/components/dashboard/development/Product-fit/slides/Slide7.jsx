@@ -17,22 +17,16 @@ export const Slide7 = () => {
               provided Product/Company Fit tool excel sheet.
             </li>
             <li>
-              You’ll answer six company related questions (on a scale of 0-4)
-              meant to examine your implementation capabilities and style.
+            You’ll answer six company related questions (on a scale of 0-4) meant to examine your implementation capabilities and style.
             </li>
             <li>
-              Do this for each identified market gap you plan on exploiting with
-              a specific product.
+            Do this for each identified market gap you plan on exploiting with a specific product.
             </li>
             <li>
-              The result will be plotted within one of four quadrants:
+            The result will be plotted within one of four quadrants:
               <ul type="none">
-                <li className="py-1">
-                  ✓ Deliberate Strategy / Predictive Company
-                </li>
-                <li className="py-1">
-                  ✓ Emergent Strategy / Predictive Company
-                </li>
+                <li className="py-1">✓ Deliberate Strategy / Predictive Company</li>
+                <li className="py-1">✓ Emergent Strategy / Predictive Company</li>
                 <li className="py-1">✓ Deliberate Strategy / Agile Company</li>
                 <li className="py-1">✓ Emergent Strategy / Agile Company</li>
               </ul>

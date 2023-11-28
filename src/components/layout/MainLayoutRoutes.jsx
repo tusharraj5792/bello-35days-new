@@ -14,10 +14,6 @@ import { DefineValue } from "../dashboard/development/defineValue";
 import { ProblemSolutionFit } from "../dashboard/development/problemSolutionFit";
 import { PrimaryCustomer } from "../dashboard/development/primaryCustomer";
 import { ValueDrivers } from "../dashboard/development/valueDrivers";
-import Execution from "../dashboard/execution/executionandMonititoring";
-import { ValueMap } from "../dashboard/development/valueMap";
-import { StrategyReview } from "../dashboard/review/strategyReview";
-import { StrategyMap } from "../dashboard/development/strategyMap";
 
 const MainLayoutRoutes = () => {
   const location = useLocation();
@@ -58,31 +54,14 @@ const MainLayoutRoutes = () => {
                         path="/development/define-Value"
                         element={<DefineValue />}
                       />
-                      <Route
-                        path="/development/problem-fit"
+                      <Route path="/development/problem-fit"
                         element={<ProblemSolutionFit />}
                       />
-                      <Route
-                        path="/development/primary-customer"
+                      <Route path="/development/primary-customer"
                         element={<PrimaryCustomer />}
                       />
-                      <Route
-                        path="/development/value-drivers"
+                      <Route path="/development/value-drivers"
                         element={<ValueDrivers />}
-                      />
-                      <Route
-                        path="/execution/execution-monititoring"
-                        element={<Execution />}
-                        />
-                      <Route path="/development/value-map"
-                        element={<ValueMap />}
-                      />
-                      <Route path="/development/strategy-map"
-                        element={<StrategyMap />}
-                      />
-                      <Route
-                        path="/review/strategy-review"
-                        element={<StrategyReview />}
                       />
                     </Route>
                   </Routes>
