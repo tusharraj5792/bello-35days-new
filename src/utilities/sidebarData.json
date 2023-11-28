@@ -1,0 +1,49 @@
+[
+    {
+      "id": 1,
+      "main":"Mobilization",
+      "route": "/mobilization",
+      "subMenu": [
+        {"route":"/introduction","label":"Introduction","icons":"introduction.svg"},
+        {"route":"/confirm-mission","label":"Confirm Mission","icons":"confirm.svg"}
+        ],
+      "label":"Mobilization"
+    },
+    {
+        "id": 2,
+        "main":"Development",
+        "route": "/development",
+        "subMenu": [
+            {"route":"/internal-assessment","label":"Internal Assessment","icons":"assessment.svg"},
+            {"route":"/external-assessment","label":"External Assessment","icons":"assessment1.svg"},
+            {"route":"/product-fit","label":"Product/Company Fit","icons":"product.svg"},
+            {"route":"/define-value","label":"Define Value","icons":"define-val.svg"},
+            {"route":"/problem-fit","label":"Problem/Solution Fit","icons":"sol-fit.svg"},
+            {"route":"/primary-customer","label":"Primary Customer","icons":"primary-customer.svg"},
+            {"route":"/value-drivers","label":"Value Drivers","icons":"val-drivers.svg"},
+            {"route":"/value-map","label":"Value Map","icons":"val-map.svg"},
+            {"route":"/strategy-map","label":"Strategy Map","icons":"map.svg"},
+            {"route":"/executive-summary","label":"Executive Summary","icons":"summary.svg"}
+            ],
+        "label":"Development"
+      },
+      {
+        "id": 3,
+        "main":"Execution",
+        "route": "/execution",
+        "subMenu": [
+          {"route":"/execution-monititoring","label":"Execution and Monititoring","icons":"Execution.svg"}
+          ],
+        "label":"Execution"
+      },
+      {
+        "id": 4,
+        "main":"Review",
+        "route": "/review",
+        "subMenu": [
+          {"route":"/strategy-review","label":"Strategy Review","icons":"Strategy.svg"}
+          ],
+        "label":"Review"
+      }   
+  ]
+  
